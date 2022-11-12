@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     app:cardUseCompatPadding="true"
     app:cardElevation="5dp"
+    android:backgroundTint="@color/white"
     app:cardCornerRadius="10dp"
     app:contentPadding="10dp"
     android:layout_height="150dp">
@@ -129,7 +130,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#11F31E"
+                android:textColor="@color/light_green"
                 android:text="COMPLETED"
                 android:fontFamily="@font/dm_sans_medium"
                 android:textStyle="bold"

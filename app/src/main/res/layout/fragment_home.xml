@@ -88,7 +88,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/dm_sans"
                 android:layout_marginTop="10dp"
-                android:text="Enter the doctor's name, email or phone"
+                android:text="Enter the Expert's name, email or phone"
                 android:textColor="@color/black"
                 android:textSize="15sp"
                 tools:layout_editor_absoluteX="32dp"
@@ -152,7 +152,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
                     android:fontFamily="@font/dm_sans_medium"
-                    android:text="Doctor Found!"
+                    android:text="Expert Found!"
                     android:textColor="@color/light_blue"
                     android:textSize="20dp" />
 
@@ -204,7 +204,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
             android:fontFamily="@font/dm_sans_bold"
-            android:text="Doctor not found!"
+            android:text="Expert Not Found!"
             android:textColor="@color/black"
             android:textSize="25dp"
             android:visibility="gone"

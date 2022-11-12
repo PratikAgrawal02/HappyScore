@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.pratik.medex">
+    package="com.pratik.happyscore">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
@@ -20,29 +20,29 @@
         android:theme="@style/Theme.Medify"
         tools:targetApi="31">
         <activity
-            android:name="com.pratik.medex.auth.ForgotPasswordActivity"
+            android:name="com.pratik.happyscore.auth.ForgotPasswordActivity"
             android:exported="false" />
         <activity
-            android:name="com.pratik.medex.profile.EditProfileActivity"
+            android:name="com.pratik.happyscore.profile.EditProfileActivity"
             android:exported="false" />
         <activity
-            android:name="com.pratik.medex.profile.ProfileActivity"
+            android:name="com.pratik.happyscore.profile.ProfileActivity"
             android:exported="false" />
         <activity
-            android:name="com.pratik.medex.prescription.AddPrescriptionActivity"
+            android:name="com.pratik.happyscore.prescription.AddPrescriptionActivity"
             android:exported="false" />
         <activity
-            android:name="com.pratik.medex.mainFragments.DoctorPatient"
+            android:name="com.pratik.happyscore.mainFragments.DoctorPatient"
             android:exported="true" />
         <activity
-            android:name="com.pratik.medex.appointment.BookingDoneActivity"
+            android:name="com.pratik.happyscore.appointment.BookingDoneActivity"
             android:exported="true" />
         <activity
-            android:name="com.pratik.medex.mainFragments.UPImanager"
+            android:name="com.pratik.happyscore.mainFragments.UPImanager"
             android:exported="true" />
 
         <activity
-            android:name="com.pratik.medex.introduction.Splashscreen"
+            android:name="com.pratik.happyscore.introduction.Splashscreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -51,21 +51,21 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.pratik.medex.appointment.AppointmentBooking"
+            android:name="com.pratik.happyscore.appointment.AppointmentBooking"
             android:exported="true" />
         <activity
-            android:name="com.pratik.medex.auth.SignUp_First"
+            android:name="com.pratik.happyscore.auth.SignUp_First"
             android:exported="true" />
         <activity
-            android:name="com.pratik.medex.auth.SignIn_Activity"
+            android:name="com.pratik.happyscore.auth.SignIn_Activity"
             android:exported="true"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name="com.pratik.medex.auth.SignUp_Activity"
+            android:name="com.pratik.happyscore.auth.SignUp_Activity"
             android:exported="true"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name="com.pratik.medex.HomeActivity"
+            android:name="com.pratik.happyscore.HomeActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustPan" />
 
