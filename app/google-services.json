@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "854625493706",
+    "firebase_url": "https://medex-10a9f-default-rtdb.firebaseio.com",
+    "project_id": "medex-10a9f",
+    "storage_bucket": "medex-10a9f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:854625493706:android:cf5454dbd67b045ef2ca33",
+        "android_client_info": {
+          "package_name": "com.pratik.medex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "854625493706-n512dfna82jp63mms3optde6hdjedhag.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pratik.medex",
+            "certificate_hash": "2ac27b0d6f53c823e7ed892bddf03d9e1deb3a09"
+          }
+        },
+        {
+          "client_id": "854625493706-nqkt7ramhm0b0mvf2cl9ggfkdl2o1gk4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAf2tcsIEQrJDnibr5th8ttyQh2Ef2lz0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "854625493706-nqkt7ramhm0b0mvf2cl9ggfkdl2o1gk4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
