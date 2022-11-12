@@ -16,6 +16,7 @@ import com.pratik.happyscore.auth.SignIn_Activity
 import com.pratik.happyscore.databinding.FragmentSettingsBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
+import com.pratik.happyscore.auth.Questionare
 
 class SettingsFragment : Fragment() {
 
@@ -59,6 +60,9 @@ class SettingsFragment : Fragment() {
                     TODO("Not yet implemented")
                 }
             })
+        }
+        binding.updatehealth.setOnClickListener {
+            startActivity(Intent(requireActivity(),Questionare::class.java))
         }
         return binding.root
     }

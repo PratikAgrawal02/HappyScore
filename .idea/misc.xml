@@ -12,19 +12,24 @@
         <entry key="..\:/AndroidStudioProjects/HappyScore/app/src/main/res/layout/activity_edit_profile.xml" value="0.38333333333333336" />
         <entry key="..\:/AndroidStudioProjects/HappyScore/app/src/main/res/layout/activity_forgot_password.xml" value="0.38333333333333336" />
         <entry key="..\:/AndroidStudioProjects/HappyScore/app/src/main/res/layout/activity_home.xml" value="0.38333333333333336" />
+        <entry key="..\:/AndroidStudioProjects/HappyScore/app/src/main/res/layout/activity_patients_data.xml" value="0.264" />
         <entry key="..\:/AndroidStudioProjects/HappyScore/app/src/main/res/layout/activity_profile.xml" value="0.38333333333333336" />
+        <entry key="..\:/AndroidStudioProjects/HappyScore/app/src/main/res/layout/activity_questionare.xml" value="0.3692708333333333" />
         <entry key="..\:/AndroidStudioProjects/HappyScore/app/src/main/res/layout/activity_sign_in.xml" value="0.38333333333333336" />
         <entry key="..\:/AndroidStudioProjects/HappyScore/app/src/main/res/layout/activity_sign_up.xml" value="0.38333333333333336" />
         <entry key="..\:/AndroidStudioProjects/HappyScore/app/src/main/res/layout/activity_sign_up_first.xml" value="0.38333333333333336" />
         <entry key="..\:/AndroidStudioProjects/HappyScore/app/src/main/res/layout/activity_splashscreen.xml" value="0.38333333333333336" />
         <entry key="..\:/AndroidStudioProjects/HappyScore/app/src/main/res/layout/activity_upimanager.xml" value="0.38333333333333336" />
+        <entry key="..\:/AndroidStudioProjects/HappyScore/app/src/main/res/layout/activity_user_card.xml" value="0.38333333333333336" />
         <entry key="..\:/AndroidStudioProjects/HappyScore/app/src/main/res/layout/appointment_list.xml" value="0.38333333333333336" />
         <entry key="..\:/AndroidStudioProjects/HappyScore/app/src/main/res/layout/confirstatus.xml" value="0.536" />
         <entry key="..\:/AndroidStudioProjects/HappyScore/app/src/main/res/layout/fragment_home.xml" value="0.38333333333333336" />
         <entry key="..\:/AndroidStudioProjects/HappyScore/app/src/main/res/layout/fragment_patient_appointment.xml" value="0.38333333333333336" />
         <entry key="..\:/AndroidStudioProjects/HappyScore/app/src/main/res/layout/fragment_reminder.xml" value="0.3299492385786802" />
+        <entry key="..\:/AndroidStudioProjects/HappyScore/app/src/main/res/layout/fragment_settings.xml" value="0.38333333333333336" />
         <entry key="..\:/AndroidStudioProjects/HappyScore/app/src/main/res/layout/item_pill.xml" value="0.38333333333333336" />
         <entry key="..\:/AndroidStudioProjects/HappyScore/app/src/main/res/layout/list_items.xml" value="0.38333333333333336" />
+        <entry key="..\:/AndroidStudioProjects/HappyScore/app/src/main/res/layout/list_items2.xml" value="0.38229166666666664" />
         <entry key="..\:/AndroidStudioProjects/HappyScore/app/src/main/res/menu/bottom_menu.xml" value="0.38333333333333336" />
         <entry key="..\:/AndroidStudioProjects/Medify/app/src/main/res/layout/activity_add_prescription.xml" value="0.38333333333333336" />
         <entry key="..\:/AndroidStudioProjects/Medify/app/src/main/res/layout/activity_booking_done.xml" value="0.38333333333333336" />

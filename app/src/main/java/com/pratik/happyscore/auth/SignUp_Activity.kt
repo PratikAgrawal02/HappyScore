@@ -113,7 +113,7 @@ class SignUp_Activity : AppCompatActivity() {
                             //Create user object
                             val statsData = "0:0:0:0:0?0:0:0:0:0?0:0:0:0:0?0:0:0:0:0"
                             val user = User(name, email, phone, uid, isDoctor, age, specialist, statsData, "false")
-                            Toast.makeText(this@SignUp_Activity,"checkpoint",Toast.LENGTH_SHORT).show()
+                           // Toast.makeText(this@SignUp_Activity,"checkpoint",Toast.LENGTH_SHORT).show()
                             //add user data in the Realtime Database
                             db.child(u?.uid!!).setValue(user).addOnCompleteListener { it1 ->
                                 if (it1.isSuccessful) {

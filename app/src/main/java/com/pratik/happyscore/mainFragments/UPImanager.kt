@@ -59,7 +59,6 @@ class UPImanager : AppCompatActivity() {
             editor.putString("upi", encryption.encrypt(upiString.toString()))
             editor.apply()
         }
-
     }
 
     @Throws(WriterException::class)

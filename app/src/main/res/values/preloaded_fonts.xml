@@ -4,5 +4,7 @@
         <item>@font/dm_sans</item>
         <item>@font/dm_sans_bold</item>
         <item>@font/dm_sans_medium</item>
+        <item>@font/poppins_bold</item>
+        <item>@font/poppins_medium</item>
     </array>
 </resources>

@@ -4,6 +4,8 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
+import android.graphics.Bitmap
+import android.graphics.Color
 import android.os.Bundle
 import android.os.Handler
 import android.view.LayoutInflater
@@ -13,13 +15,20 @@ import android.view.inputmethod.EditorInfo
 import android.widget.Toast
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
-import com.pratik.happyscore.appointment.AppointmentBooking
-import com.pratik.happyscore.RemoveCountryCode
-import com.pratik.happyscore.databinding.FragmentHomeBinding
 import com.google.firebase.FirebaseError
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
+import com.google.zxing.BarcodeFormat
+import com.google.zxing.EncodeHintType
+import com.google.zxing.WriterException
+import com.google.zxing.qrcode.QRCodeWriter
+import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel
 import com.ncorti.slidetoact.SlideToActView
+import com.pratik.happyscore.RemoveCountryCode
+import com.pratik.happyscore.appointment.AppointmentBooking
+import com.pratik.happyscore.databinding.FragmentHomeBinding
+import java.text.DecimalFormat
+import java.util.*
 
 
 class HomeFragment : Fragment() {
@@ -52,6 +61,8 @@ class HomeFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
+
+        TSS()
 
         firebaseAuth = FirebaseAuth.getInstance()
         val user = firebaseAuth.currentUser
@@ -105,6 +116,22 @@ class HomeFragment : Fragment() {
 
 
         return binding.root
+    }
+
+    private fun TSS() {
+        val pg= 6.9
+        binding.circularProgressBar.apply {
+            setProgressWithAnimation(pg.toFloat(), 1000)
+            progressMax = 10f
+
+            roundBorder = true
+        }
+        binding.circularProgressBar.onProgressChangeListener = {
+            val df = DecimalFormat()
+            df.maximumFractionDigits = 1
+            binding.textprogress.text = "Total Social\nScore\n(${df.format(it)}/10)"
+            // Do something
+        }
     }
 
     private fun doctorIsPresent() {
@@ -170,6 +197,29 @@ class HomeFragment : Fragment() {
         else
             binding.namePreview.text = userName
 
+        binding.Usercode.setOnClickListener {
+            val intent:Intent = Intent(requireActivity(),UserCard::class.java)
+            intent.putExtra("uid",firebaseAuth.uid.toString())
+            intent.putExtra("name",userName)
+            startActivity(intent)
+        }
+
+    }
+    @Throws(WriterException::class)
+    fun generateQrCode(value: String): Bitmap {
+        val hintMap = Hashtable<EncodeHintType, ErrorCorrectionLevel>()
+        hintMap[EncodeHintType.ERROR_CORRECTION] = ErrorCorrectionLevel.H
+
+        val qrCodeWriter = QRCodeWriter()
+        val size = 512
+        val bitMatrix = qrCodeWriter.encode(value, BarcodeFormat.QR_CODE, size, size)
+        val width = bitMatrix.width
+        val bmp = Bitmap.createBitmap(width, width, Bitmap.Config.RGB_565)
+        for (x in 0 until width)
+            for (y in 0 until width)
+                bmp.setPixel(y, x, if (bitMatrix.get(x, y)) Color.BLACK else Color.WHITE)
+
+        return bmp
     }
 
 }
